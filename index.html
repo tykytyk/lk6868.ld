@@ -41,8 +41,11 @@
     <link rel="stylesheet" href="assets/css/lib/slick.css">
     <link rel="stylesheet" href="assets/css/lib/lightcase.css">
 
+    <link rel="preload" href="assets/images/banner/banner-bg.mp4" as="video" type="video/mp4" />
+
     <!-- Main css -->
     <link rel="stylesheet" href="assets/css/main.css">
+
 </head>
     <body data-bs-spy="scroll" data-bs-offset="170" data-bs-target=".privacy-policy-sidebar-menu">
 
@@ -106,7 +109,25 @@
                     <img src="assets/images/banner/card.png" alt="" class="shape1">
                 </div>
                 <div class="banner-thumb">
-                    <img src="assets/images/banner/thumb-2.png" alt="banner">
+                    <!-- <img src="assets/images/banner/thumb-2.png" alt="banner"> -->
+                    <div class="game-item">
+                        <div class="game-inner">
+                            <div class="game-item__thumb">
+                                <video id="myVideo"
+                                       class="banner-bg-video"
+                                       preload="auto"
+                                       playsinline
+                                       loop
+                                       autoplay
+                                       muted
+                                       controls
+                                       style="width:100%;height:auto;">
+                                  <source src="assets/images/banner/banner-bg.mp4" type="video/mp4">
+                                </video>
+                            </div>
+                        </div>
+                        <div class="ball"></div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -349,6 +370,15 @@
 
 <script>
     document.getElementById('currentYear').textContent = new Date().getFullYear();
+</script>
+
+<script>
+    window.addEventListener('DOMContentLoaded', function() {
+      var video = document.getElementById('myVideo');
+      if (video) {
+        video.play();
+      }
+    });
 </script>
 
 </body>
