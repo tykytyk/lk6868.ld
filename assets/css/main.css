@@ -876,11 +876,11 @@ i {
     }
 
     .padding-top {
-        padding-top: 70px;
+        padding-top: 50px;
     }
 
     .padding-bottom {
-        padding-bottom: 70px;
+        padding-bottom: 50px;
     }
 
     .container, .container-fluid {
@@ -1107,24 +1107,28 @@ i {
 .logo img {
     max-width: 180px;
     /* max-height: 60px; */
+    padding: 10px 0;
 }
 
 @media (max-width: 1199px) {
     .logo img {
         max-width: 160px;
+        padding: 0;
     }
 }
 
 @media (max-width: 767px) {
     .logo img {
         max-width: 150px;
+        padding: 0;
     }
 }
 
 @media (max-width: 575px) {
     .logo img {
-        max-width: 100px;
-        max-height: 50px;
+        max-width: 150px;
+        max-height: 80px;
+        padding: 0;
     }
 }
 
@@ -4512,7 +4516,7 @@ iframe {
     display: grid;
     grid-template: repeat(3, 45px)/repeat(3, 45px);
     border: 1px solid #080101;
-    background: #4b0e40;
+    background: #fff;
     position: absolute;
     width: 200px;
     height: 200px;
