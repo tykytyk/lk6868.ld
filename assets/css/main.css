@@ -3134,8 +3134,37 @@ select.form--control option:hover {
     color: #FFC827;
 }
 
-.why-section {
+section.why-section {
     position: relative;
+    padding-top: 16px;
+    padding-bottom: 300px;
+}
+
+section {
+    padding-top: 16px;
+    padding-bottom: 16px;
+}
+
+/* Tablet (md) and up */
+@media (min-width: 768px) {
+    section {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    section.why-section {
+        padding-top: 80px;
+    }
+}
+
+/* Desktop (lg) and up */
+@media (min-width: 992px) {
+    section {
+        padding-top: 150px;
+        padding-bottom: 150px;
+    }
+    section.why-section {
+        padding-top: 150px;
+    }
 }
 
 .why-section .shape1 {
